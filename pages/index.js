@@ -19,14 +19,14 @@ export default function Home() {
   const [keyword, setKeyword] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/members")
+    fetch("/api/members")
       .then((response) => response.json())
       .then((members) => setMembers(members));
   }, []);
 
   const submitSave = (e) => {
     e.preventDefault();
-    fetch("http://localhost:3000/api/members", {
+    fetch("/api/members", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -39,7 +39,7 @@ export default function Home() {
 
   const submitSearch = (e) => {
     e.preventDefault();
-    fetch(`http://localhost:3000/api/members?keyword=${keyword}`)
+    fetch(`/api/members?keyword=${keyword}`)
       .then((response) => response.json())
       .then((members) => setMembers(members));
   };

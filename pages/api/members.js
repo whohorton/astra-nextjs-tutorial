@@ -8,8 +8,8 @@ export default async function handler(req, res) {
   });
 
   const membersCollection = astraClient
-    .namespace("nextjs")
-    .collection("members");
+    .namespace("sag_nextjs_fullstack")
+    .collection("sag_next_members");
 
   if (req.method === "POST") {
     const { body } = req;
