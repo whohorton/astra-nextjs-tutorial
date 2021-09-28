@@ -8,5 +8,5 @@
   "gitpodUrl": "https://gitpod.io/#https://github.com/DataStax-Examples/astra-nextjs-tutorial",
   "tags": [{ "name": "javascript" }, { "name": "nextjs" }],
   "category": "apps",
-  "priority": 3
+  "priority": 2
 }
